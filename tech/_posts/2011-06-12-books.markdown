@@ -1,0 +1,51 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-12 18:41:36+00:00
+layout: post
+slug: books
+title: Books
+wordpress_id: 18
+---
+
+
+	
+  1. Effective C++/STL
+
+	
+  2. C++ for game programmers
+
+	
+  3. Working effectively on legacy code
+
+	
+  4. Physics for game programmers
+
+	
+  5. Modern C++
+
+	
+  6. Design Patterns
+
+	
+  7. Exceptional C++
+
+	
+  8. Practical C++
+
+	
+  9. C++ Coding Standards
+
+
+
+
+Computer Graphics Books:
+
+
+
+
+
+
+[http://www.fsz.bme.hu/~szirmay/book.html](http://www.fsz.bme.hu/~szirmay/book.html)
+
+

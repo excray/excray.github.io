@@ -1,0 +1,19 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-13 16:18:57+00:00
+layout: post
+slug: c-tools
+title: C++ Tools
+wordpress_id: 124
+---
+
+Valgrind - Never used it. For detecting memory leaks.
+
+CppCheck - Used it long time back. A neat static code analyzer. Now i wonder why i stopped using it.
+
+GDB - Used it long time back. Really a tough thing to use.
+
+Doxygen - Documentation tool for various languages.
+
+msvsmon.exe - for remote debugging

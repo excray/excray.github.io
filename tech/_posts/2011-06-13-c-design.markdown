@@ -1,0 +1,45 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-13 17:26:49+00:00
+layout: post
+slug: c-design
+title: C++ Design
+wordpress_id: 137
+---
+
+Some design concepts that i have used.
+
+Pimpl Idiom:
+
+Observer pattern:
+
+Abstract Factory:
+
+Exception Dispatcher:
+
+[sourcecode language="cpp"]
+ void handleException()
+ {
+ try {
+ throw;
+ }
+ catch (MyException& e) {
+
+ }
+ catch (YourException& e) {
+
+ }
+ }
+
+void f()
+ {
+ try {
+
+ }
+ catch (...) {
+ handleException();
+ }
+ }
+
+[/sourcecode]

@@ -1,0 +1,15 @@
+---
+author: gvivekcbe
+comments: true
+date: 2012-03-28 23:57:43+00:00
+layout: post
+slug: unix-pipe
+title: Unix Pipe
+wordpress_id: 185
+---
+
+Recently i did something like this,
+
+[sourcecode] $> cat large.net | head -n 1 [/sourcecode]
+
+large.net has a million lines, but the command line printed the output instantly. And thats when i wondered how unix pipes worked. And this [post](http://computinglife.wordpress.com/2009/04/17/unix-pipe-internals/) explains it. Brilliant.

@@ -1,0 +1,107 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-12 18:38:50+00:00
+layout: post
+slug: wpf
+title: WPF
+wordpress_id: 10
+---
+
+I studied WPF for a couple of months. Its not simple, but its amazing. And since its not simple, I forget it easily.
+
+The main features of it would be
+
+**Data binding/Data Templating/Data Conversion/Data Validation:**
+
+[http://msdn.microsoft.com/en-us/library/ms750612.aspx](http://msdn.microsoft.com/en-us/library/ms750612.aspx)
+
+
+#### Data conversion example:
+
+
+[sourcecode language="xml"]
+
+<code><Page.Resources>
+ <BooleanToVisibilityConverter x:Key= "booltoVis" />
+ <ObjectDataProvider ObjectInstance="{x:Static p:Settings.Default}" x:Key="Settings" />
+ <ControlTemplate x:Key="TextBoxError">
+ <DockPanel LastChildFill="True">
+ <TextBlock DockPanel.Dock="Bottom"
+ Foreground="Orange"
+ FontSize="12pt"
+ Text="{Binding ElementName=MyAdorner,
+ Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+ </TextBlock>
+ <Border BorderBrush="Red" BorderThickness="1">
+ <AdornedElementPlaceholder Name="MyAdorner" />
+ </Border>
+ </DockPanel>
+ </ControlTemplate>
+ </Page.Resources></code>
+
+[/sourcecode]
+
+
+#### Binding controls example:
+
+
+[sourcecode language="xml"]
+
+<code><ComboBox Height="29" Margin="121,35,16,0" Name="gritsVersionComboBox" VerticalAlignment="Top" SelectionChanged="gritsVersionComboBox_SelectionChanged" >
+ <ComboBoxItem>
+ <Button Name="gritsVersionChoose" Click="gritsVersionChoose_Click" Width="{Binding ElementName=gritsVersionComboBox, Path=ActualWidth}">Choose custom path..</Button>
+ </ComboBoxItem>
+ </ComboBox></code>
+
+[/sourcecode]
+
+Validation example:
+
+[sourcecode language="xml"]
+ <code></code>
+
+<my:AutoCompleteBox.Text> --></my: <TextBox Grid.Column="1" Margin="10,46,78,0" Name="copyPath" Validation.ErrorTemplate="{StaticResource TextBoxError}" Height="50" VerticalAlignment="Top" FontSize="15"> <TextBox.Text> <Binding Mode="TwoWay" Path="Path" RelativeSource="{RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}" > <Binding.ValidationRules> <validators:DirectoryExistsValidator/> </Binding.ValidationRules> </Binding> </TextBox.Text></TextBox>
+
+[/sourcecode]
+
+**XAML:**
+
+[http://msdn.microsoft.com/en-us/library/ms752059.aspx](http://msdn.microsoft.com/en-us/library/ms752059.aspx)
+
+**Style and Templating:**
+
+[http://msdn.microsoft.com/en-us/library/ms745683.aspx](http://msdn.microsoft.com/en-us/library/ms745683.aspx)
+
+`**Example:**`
+
+[sourcecode language="xml"]</code>
+
+<code><ListBox Grid.ColumnSpan="3" Grid.Row="2" Margin="16,0,16,49" Name="outputBox" Drop="outputBox_Drop" AllowDrop="True"
+ IsTextSearchEnabled="True" >
+ <ListBox.ItemContainerStyle>
+ ListBoxItem}" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+ <EventSetter Event="MouseDoubleClick" Handler="ListBoxItem_MouseDoubleClick"/>
+ </Style>
+ </ListBox.ItemContainerStyle>
+ </ListBox></code>
+
+[/sourcecode]
+
+**WPF Toolkit:**
+
+This has lot of additional controls. Like AutoCompleteBox for example.
+
+[sourcecode language="xml"]
+
+<code><my:AutoCompleteBox Height="29" Margin="16,0,16,20" Name="gritsCommandLineBox"
+VerticalAlignment="Bottom" xmlns:my="clr-namespace:System.Windows.Controls;
+assembly=System.Windows.Controls.Input.Toolkit" KeyDown="gritsCommandLineBox_KeyDown" GotFocus="gritsCommandLineBox_GotFocus" IsTextCompletionEnabled="True"/></code>
+
+[/sourcecode]
+
+FlowDocument is a very good control to display formatted text.
+
+**Application Settings example:**
+
+Properties.Settings.Default.Project;

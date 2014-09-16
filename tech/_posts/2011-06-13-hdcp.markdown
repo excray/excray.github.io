@@ -1,0 +1,19 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-13 15:58:43+00:00
+layout: post
+slug: hdcp
+title: HDCP
+wordpress_id: 117
+---
+
+The Hdcp spec:
+
+[http://www.digital-cp.com/files/static_page_files/D672E3A3-EF28-151F-63A2522CCC29DAF1/HDCPSpecificationRev1_1.pdf](http://www.digital-cp.com/files/static_page_files/D672E3A3-EF28-151F-63A2522CCC29DAF1/HDCPSpecificationRev1_1.pdf)
+
+Hdcp repeater uses SHA-1.
+
+[http://www.itl.nist.gov/fipspubs/fip180-1.htm](http://www.itl.nist.gov/fipspubs/fip180-1.htm)
+
+

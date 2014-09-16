@@ -1,0 +1,55 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-12 18:42:36+00:00
+layout: post
+slug: boost
+title: Boost
+wordpress_id: 22
+---
+
+Boost features that i have used:
+
+
+
+	
+  1. split
+
+	
+  2. lexical_cast
+
+	
+  3. function
+
+	
+  4. bind
+
+	
+  5. BOOST_FOREACH
+
+	
+  6. Boost filtering io streams
+
+	
+  7. Boost Regex
+
+
+
+
+**Boost Threads**
+
+
+[slideshare id=8292644&doc=boostthreads-110613081450-phpapp02]
+
+**Pointer Containers**
+
+ptr_vec | ptr_map etc:
+
+They are copy constructible and copy assignable. new_clone method has to be overridden if the concrete types are not known. That is the ptr_vec may be defined as pre_vec<A *> where A is an abstract class. Now if the ptr_vec is tried to be copied, it'll give compilation error since the concrete type is not known. Another way is to pass the customclonealloc param during the template declaration.
+
+[sourcecode language="cpp"]
+A* new_clone( const A& t )
+{
+    return t.clone();
+}
+[/sourcecode]

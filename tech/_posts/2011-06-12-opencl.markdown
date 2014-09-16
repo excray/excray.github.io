@@ -1,0 +1,27 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-12 18:40:57+00:00
+layout: post
+slug: opencl
+title: OpenCL
+wordpress_id: 14
+---
+
+Performance constraints:
+
+
+
+	
+  1. Shared Memory vs Global Memory
+
+	
+  2. Atomic instructions
+
+	
+  3. Shared Memory Bank conflicts
+
+	
+  4. Memory Coalescing - SoA vs AoS
+
+

@@ -1,0 +1,66 @@
+---
+author: gvivekcbe
+comments: true
+date: 2011-06-12 18:38:10+00:00
+layout: post
+slug: c-tidbits
+title: C++ Tidbits
+wordpress_id: 8
+---
+
+
+	
+  1. You cant have const arrays.
+
+	
+  2. Don’t use singleton if it accepts args.
+
+	
+  3. Don’t use "using namespace" in header file.
+
+	
+  4. Map has a pair array initializer.
+
+	
+  5. Don’t use magic numbers.
+
+	
+  6. Const int and string values can be defined in header file but not float values.
+
+	
+  7. Virtual inheritance is runtime costly, but use it to avoid the diamond inheritance
+
+	
+  8. Const instead of #define
+
+	
+  9. Use forward declaration in header files.
+
+	
+  10. Use Null Object pattern to avoid checking for null
+
+	
+  11. A Class should do only one thing.
+
+	
+  12. Use const always if possible
+
+	
+  13. Use callbacks to initialize/modify/access STL containers.
+
+	
+  14. When template is defined in cpp, to avoid linker errors, add template void foo<typename>() to cpp file
+
+
+
+	
+  1. To choose a STL container, follow this cheat sheet. [http://linuxsoftware.co.nz/cppcontainers.html](http://linuxsoftware.co.nz/cppcontainers.html)
+
+	
+  2. Global functions in namespace. Have namespace {} in .cpp file as well
+
+In GCC, erase doesn't accept const_iterator
+
+Never ever use using namespace in header files. Because sometimes there are certain functions in  boost and stl that can get conflicted. Like transform()
+
+

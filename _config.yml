@@ -1,0 +1,12 @@
+# Site settings
+title: Wide spaces
+name: Wide Spaces
+description: "My personal website"
+baseurl: ""
+url: "http://localhost:4000"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 10
+
