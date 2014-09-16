@@ -4,9 +4,9 @@ title: Tech
 full_posts: 5
 ---
 
-<a href='http://feeds.feedburner.com/JoinTheConversation' class='float-right'><img src='/images/subscribe.png' alt='Subscribe to XML Feed'/></a>
+<!-- <a href='http://feeds.feedburner.com/JoinTheConversation' class='float-right'><img src='/images/subscribe.png' alt='Subscribe to XML Feed'/></a> -->
 
-{% for post in site.posts %}
+{% for post in site.categories.tech %}
   {% if forloop.index < page.full_posts %}
   <div class='post'>
     <span class='date'>{{post.date | date_to_string}}</span>

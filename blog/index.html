@@ -4,9 +4,11 @@ title: Blog
 full_posts: 5
 ---
 
-<a href='http://feeds.feedburner.com/JoinTheConversation' class='float-right'><img src='/images/subscribe.png' alt='Subscribe to XML Feed'/></a>
-
-{% for post in site.posts %}
+<!-- <a href='http://feeds.feedburner.com/JoinTheConversation' class='float-right'><img src='/images/subscribe.png' alt='Subscribe to XML Feed'/></a>
+{% for cat in site.categories %}
+    <li>{{ cat[0] }}</li>
+{% endfor %} -->
+{% for post in site.categories.blog %}
   {% if forloop.index < page.full_posts %}
   <div class='post'>
     <span class='date'>{{post.date | date_to_string}}</span>
