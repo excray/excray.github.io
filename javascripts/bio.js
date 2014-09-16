@@ -1,25 +1,57 @@
 var treeData = [
   {
-    "name": "Top Level",
+    "name": "Me",
     "parent": "null",
     "children": [
       {
-        "name": "Level 2: A",
-        "parent": "Top Level",
+        "name": "Work",
+        "parent": "Me",
         "children": [
           {
-            "name": "Son of A",
-            "parent": "Level 2: A"
+            "name": "Intel",
+            "parent": "Work"
           },
           {
-            "name": "Daughter of A",
-            "parent": "Level 2: A"
+            "name": "Qualcomm*",
+            "parent": "Work"
           }
         ]
       },
       {
-        "name": "Level 2: B",
-        "parent": "Top Level"
+        "name": "Play",
+        "parent": "Me",
+        "children": [
+          {
+            "name": "Hiking",
+            "parent": "Play"
+          },
+          {
+            "name": "Coding",
+            "parent": "Play"
+          },
+          {
+            "name": "Quizzing",
+            "parent": "Play"
+          },
+          {
+            "name": "Writing",
+            "parent": "Play"
+          }
+        ]
+      },
+      {
+        "name": "School",
+        "parent": "Me",
+        "children": [
+          {
+            "name": "PSG Tech",
+            "parent": "School"
+          },
+          {
+            "name": "UMich Ann Arbor",
+            "parent": "School"
+          }
+        ]
       }
     ]
   }
@@ -51,6 +83,15 @@ root = treeData[0];
 root.x0 = height / 2;
 root.y0 = 0;
   
+
+function collapse(d) {
+  if (d.children) {
+    d._children = d.children;
+    d._children.forEach(collapse);
+    d.children = null;
+  }
+}
+collapse(root);
 update(root);
 
 d3.select(self.frameElement).style("height", "500px");
@@ -151,6 +192,8 @@ function click(d) {
         d.children = d._children;
         d._children = null;
   }
+
+
   update(d);
 }
 
