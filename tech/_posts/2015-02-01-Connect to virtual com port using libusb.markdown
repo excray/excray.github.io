@@ -1,7 +1,7 @@
 ---
 author: gvivekcbe
 comments: true
-date: 2014-09-16 22:40:33+00:00
+date: 2015-02-01 22:40:33+00:00
 layout: post
 title: Reading and writing to a virtual com port device using libusb.
 ---
