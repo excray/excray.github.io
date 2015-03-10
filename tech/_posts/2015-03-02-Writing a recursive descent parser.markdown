@@ -6,7 +6,7 @@ layout: post
 title: Writing a recursive descent parser. 
 ---
 
-
+***
 # Recursive descent parsing algorithm.
 
 ## Backus normal form:
