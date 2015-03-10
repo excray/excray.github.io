@@ -38,7 +38,7 @@ The power of BNF is in its recursive nature.
 
 ## Parser Class:
 
-> Each rule will have a method. `"|"` corresponds to an IF statement.Skip blank lines at beginning of each rule and whenever required. After every peek there would be a getchar
+> Each rule will have a method. ` | ` corresponds to an IF statement.Skip blank lines at beginning of each rule and whenever required. After every peek there would be a getchar
 
 ## methods:
 
