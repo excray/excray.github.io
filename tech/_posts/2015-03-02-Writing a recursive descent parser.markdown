@@ -64,3 +64,7 @@ Each rule will have a method. | corresponds to an IF statement.Skip blank lines 
 	<factor> := <number> | "(" <expression> ")"
 
 > [].. is repeated zero to many times. so that constitutes a while loop.
+
+Also added a parser program with expression tree.
+
+Source: [parser](https://github.com/Compilers-ML/compiler-exercises/tree/master/Excray/rdp_parser)
